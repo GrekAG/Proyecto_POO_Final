@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Entrada</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq4haWwi" crossorigin="anonymous"></script>
+<body>
+<div class="container">
+    <h1>Comprar Entrada</h1>
+    <h2 id="titulo-pelicula"></h2>
+
+    <form id="form-compra">
+        <div class="form-group">
+            <label for="horario">Horario:</label>
+            <select id="cmbHorario" name="horario" required>
+                <option value="16:00">16:00</option>
+                <option value="18:00">18:00</option>
+                <option value="20:00">20:00</option>
+                <option value="22:00">22:00</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="salaPrecio">Sala y Precio:</label>
+            <select id="cmbSalaPrecio" name="salaPrecio" required>
+                <option value="Sala Comun - $5000">Sala Común - $5000</option>
+                <option value="Sala VIP - $7000">Sala VIP - $7000</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="txtNombreCliente" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo:</label>
+            <input type="email" id="txtCorreoCliente" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="asiento">Asiento:</label>
+            <select id="cmbAsiento" name="asiento" required>
+                <option value="A1">A1</option><option value="A2">A2</option><option value="A3">A3</option>
+                <option value="B1">B1</option><option value="B2">B2</option><option value="B3">B3</option>
+            </select>
+        </div>
+        <div class="button-group">
+            <button type="submit" class="btn-pagar">Pagar</button>
+            <a href="/" class="btn-volver">Volver</a>
+        </div>
+    </form>
+    <h2 class="mt-3">Reservas Realizadas</h2>
+    <div class="table-responsive">
+        <table id="tabla-reservas" class="table table-striped table-dark">
+            <thead>
+            <tr>
+                <th>ID Venta</th>
+                <th>Fecha</th>
+                <th>Película</th>
+                <th>Horario</th>
+                <th>Asiento</th>
+                <th>Cliente</th>
+                <th>Precio</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <p id="mensaje-exito" class="mensaje-exito"></p>
+</div>
+<script src="/js/app.js"></script>
+</body>
+</html>

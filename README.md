@@ -1,19 +1,3 @@
-## 🛠️ Tecnologías Utilizadas
-
--   **Backend:**
-    -   Java 17
-    -   Spring Boot 3
-    -   Spring Web (para la API REST)
-    -   Spring Data JPA (con Hibernate para la persistencia)
--   **Base de Datos:**
-    -   MySQL
--   **Frontend:**
-    -   HTML5
-    -   CSS3 (con Grid y Flexbox para el layout)
-    -   JavaScript (Vanilla JS con `fetch` para consumir la API)
--   **Build Tool:**
-    -   Maven
-
 ## 📂 Estructura del Proyecto
 
 La estructura del proyecto sigue las convenciones estándar de una aplicación Spring Boot, separando las responsabilidades en diferentes capas.
@@ -107,6 +91,23 @@ La API expone los siguientes endpoints principales:
 | `POST` | `/api/cine/comprar`                    | Procesa una nueva compra de entrada. Requiere un `CompraDTO` en el body. |
 | `GET`  | `/api/cine/ventas-por-pelicula?titulo={titulo}` | Devuelve las ventas realizadas para una película específica.             |
 
+## 🛠️ Tecnologías Utilizadas
+
+-   **Backend:**
+    -   Java 17
+    -   Spring Boot 3
+    -   Spring Web (para la API REST)
+    -   Spring Data JPA (con Hibernate para la persistencia)
+-   **Base de Datos:**
+    -   MySQL
+-   **Frontend:**
+    -   HTML5
+    -   CSS3 (con Grid y Flexbox para el layout)
+    -   JavaScript (Vanilla JS con `fetch` para consumir la API)
+-   **Build Tool:**
+    -   Maven
+
 ## ✒️ Autor
 
-* **Gregorio Agüero**
+* Gregorio Agüero
+  [GitHub](https://github.com/GrekAG)

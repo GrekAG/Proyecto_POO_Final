@@ -76,7 +76,7 @@ Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local.
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/GrekAG/Proyecto_POO_Final.git](https://github.com/GrekAG/Proyecto_POO_Final.git)
+    git clone https://github.com/GrekAG/Proyecto_POO_Final.git
     ```
 
 2.  **Configurar la Base de Datos:**
